@@ -5,20 +5,20 @@
 class RosLocal < Formula
   desc "Helper CLI for the ROS Claude Code plugin (sign-in, skills sync, hooks)"
   homepage "https://github.com/hvoguetech/ros-claude-plugin"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hvoguetech/ros-claude-plugin/releases/download/v0.1.0/ros-local_0.1.0_darwin_amd64.tar.gz"
-      sha256 "50d6ed160d42ab28ce9b0fd8b7ed85817bb41d0a8e464eb228ebe58e66ef2611"
+      url "https://github.com/hvoguetech/ros-claude-plugin/releases/download/v0.1.1/ros-local_0.1.1_darwin_amd64.tar.gz"
+      sha256 "5ae9f1428d1676d6deeb29aa5b4c5391bf8c417fea8085916d4cf7d62e8c54c4"
 
       define_method(:install) do
         bin.install "ros-local"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hvoguetech/ros-claude-plugin/releases/download/v0.1.0/ros-local_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f1383be8432c50f241d3fe239ac703088ab66105f8ca3a64384934493b78b4ae"
+      url "https://github.com/hvoguetech/ros-claude-plugin/releases/download/v0.1.1/ros-local_0.1.1_darwin_arm64.tar.gz"
+      sha256 "626325985277b60c76df6c83d643977d3d89bdbc12d4a662285a2c43f8e1ce78"
 
       define_method(:install) do
         bin.install "ros-local"
@@ -28,15 +28,15 @@ class RosLocal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hvoguetech/ros-claude-plugin/releases/download/v0.1.0/ros-local_0.1.0_linux_amd64.tar.gz"
-      sha256 "067367a7d565a3f976e101bd92c43a5f0f9145830b059ec3bcd4a563fb472e4b"
+      url "https://github.com/hvoguetech/ros-claude-plugin/releases/download/v0.1.1/ros-local_0.1.1_linux_amd64.tar.gz"
+      sha256 "31c2019c00d8d5c129d392ac9407f6179ee7bb0d33e4977f99d100eb6f4a0a81"
       define_method(:install) do
         bin.install "ros-local"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hvoguetech/ros-claude-plugin/releases/download/v0.1.0/ros-local_0.1.0_linux_arm64.tar.gz"
-      sha256 "257a3ecb21d5d51772edde7dcc316f55d698eb21e4955e7258cfbd8890a8b64b"
+      url "https://github.com/hvoguetech/ros-claude-plugin/releases/download/v0.1.1/ros-local_0.1.1_linux_arm64.tar.gz"
+      sha256 "628399ca38bd31ecfb8ec0da21640e87db149ef272e66524d7bd15e599a884a6"
       define_method(:install) do
         bin.install "ros-local"
       end
